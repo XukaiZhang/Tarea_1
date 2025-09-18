@@ -1,23 +1,175 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Mi primera página en HTML</title>
-</head>
+<header>
+    <title>CURSO DE HTML</title>
+</header>
 <body>
-    <h1>Bienvenido a mi primera página en HTML</h1>
+ 
+    <h1 id="inicio">COSAS BÁSICAS DE HTML QUE NECESITAS SABER</h1>
+<nav>
+    <a href="#primero">¿Qué es HTML?</a> |
+    <a href="#segundo">Ejemplos de formato de texto</a> |
+    <a href="#tercero">Listas en HTML</a> |
+    <a href="#cuarto">Enlaces en HTML</a> |
+    <a href="#quinto">Imágenes en HTML</a> |
+    <a href="#sexto">Tablas en HTML</a> |
+</nav>    
+
+<section>
+    <h2 id="primero">¿Qué es HTML?</h2>
+
+    <p>HTML es el lenguaje estándar de programación que se emplea para la creación y la estructuración de páginas web.<br>Por ejemplo, cada página web que visitas, detrás tiene un código estructurado con HTML, ya que este le indica al navegador cómo tiene que mostrar la información.</p>
+</section>
+
+<section>
+    <h2 id="segundo">Ejemplos de formato de texto</h2>
+
+    <p>Para escribir en <b>negrita</b> tendrás que hacer uso de &lt;b&gt;"el texto"&lt;/b&gt;</p>
+
+    <p>Para escribir en <i>cursiva</i> tendrás que hacer uso de &lt;i&gt;"el texto"&lt;/i&gt;</p>
+
+    <p>Para escribir en <u>subrayado</u> tendrás que hacer uso de &lt;u&gt;"el texto"&lt;/u&gt;</p>
+
+    <p>Para escribir en <sub>subíndice</sub> tendrás que hacer uso de  &lt;sub&gt;"el texto"&lt;/sub&gt;</p>
+
+    <p>Para escribir en <sup>superíndice</sup> tendrás que hacer uso de &lt;sup&gt;"el texto"&lt;/sup&gt;</p>a tu página con estas etiquetas:
+
+
+
+    <p>Para <q>citar</q> tendrás que hacer uso de &lt;q&gt;"la cita"&lt;/q&gt;</p>
+
+    <p>Para <blockquote>citar en bloque</blockquote> tendrás que hacer uso de &lt;blockquote&gt;"la cita"&lt;/blockquote&gt;</p>
+</section>
+
+<section>
+    <h2 id="tercero">Listas en HTML</h2>
+
+    <p>Para crear listas ordenadas utilizaremos &lt;ol&gt;"lista"&lt;/ol&gt;</p>
+
+    <p>En cambio, para una lista desordenada emplearemos &lt;ul&gt;"lista"&lt;/ul&gt;</p>
+
+    <p>Y para añadir un elemento a la lista hay que hacer uso de &lt;li&gt;"texto"&lt;/li&gt;</p>
+
+    <h3>Ejemplo de una lista ordenada:</h3>
+
+    <ol>
+        <li>Aplicaciones Web</li>
+        <li>Digitalización</li>
+        <li>Sostenibilidad</li>
+    </ol>
+
+    <h3>Ejemplo de una lista desordenada</h3>
+
+    <ul>
+        <li>Gimnasio</li>
+        <li>Fútbol</li>
+        <li>Videojuegos</li>
+    </ul>
+
+    <p>Para definiciones utilizaremos &lt;dl&gt;"definiciones"&lt;/dl&gt;</p>
+
+    <p>Para el término a definir emplearemos &lt;dt&gt;"término"&lt;/dt&gt;</p>
     
-    <p>HTML es un lenguaje de programación que se emplea para la creación de páginas web.</p>
+    <p>Y para la definición del término emplearemos &lt;dd&gt;"definción"&lt;/dd&gt;</p>
 
-    <h2>Ejemplos de formato de texto</h2>
+    <h3>Por ejemplo:</h3>
 
-    <b>Negrita</b><br>
-    <i>Cursiva</i><br>
-    <u>Subrayado</u><br>
-    <sub>Subíndice</sub><br>
-    <sup>Superíndice</sup><br>
-    <q>Cita corta</q><br>
-    <blockquote>Cita en bloque</blockquote>
+    <dl>
+        <dt>HTML</dt>
+
+        <dd>Lenguaje de código empleado para la creación de páginas web</dd>
+
+        <dt>CSS</dt>
+
+        <dd>Lenguaje de código empleado para la modificación de la presentación de la página web.</dd>
+    </dl>
+</section>
+
+<section>
+    <h2 id="cuarto">Enlaces en HTML</h2>
+
+    <p>Si queremos añadir links a nuestra página web, tendremos que utilizar &lt;a&gt;href="url">"texto"&lt;/a&gt;</p>
+
+    <p>También podemos añadir un link que nos diriga a un apartado en específico de nuestra página web. Para ello tendremos que utilizar añadirle un "id" al apartado que queramos, y posteriormente 
+    <p>Es decir, por ejemplo si queremos que añadir un ID a un h1, se realizaría de la siguiente manera. Locarizaremos el h1 que queramos y modificaremos la etiqueta, quedaría tal que así:</p>
+
+    <p>&lt;h1 id="palabra clave"&gt;"título"&lt;/h1&gt;</p>
+
+    <p>Tendríamos que utilizar lo siguiente para añadir un link a un ID:</p>
+
+    <p>&lt;a href="#'palabra clave'"&gt;"nombre del link"&lt;/a&gt;</p>
+
+    <h3>Ejemplo de un link a una URL:</h3>
+
+    <a href="https://www.w3schools.com/html/default.asp">Curso HTML W3Schools</a>
+
+    <h3>Ejemplo de un link a un ID:</h3>
+    
+    <a href="#inicio">Inicio</a>
+</section>
+
+<section>
+    <h2 id="quinto">Imágenes en HTML</h2>
+
+    <p>Si queremos añadir imágenes que estén en internet en nuestra página web tendremos que utilizar &lt;img src="'url'" alt="'texto alternativo'"&gt;</p>
+
+    <p>En cambio, si queremos añadir imágenes almacenadas en nuestro equipo, tendremos que utilizar &lt;img src="'dirección de la imagen'" alt="'texto alternativo'"</p>
+
+    <h3>Ejemplo de imagen desde internet:</h3>
+
+    <img src="https://imgs.search.brave.com/fOtEqyLtdGeC8aYoixbIRMSh31IH1KZomlq_YyfIGSY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW9ub3MuY29tL2Vz/LXVzL2RpZ2l0YWxn/dWlkZS9maWxlYWRt/aW4vX3Byb2Nlc3Nl/ZF8vMS8yL2NzbV9o/dG1sLWRpdl84OWQ1/NTFjMGRlLndlYnA" alt="No disponible">
+
+    <h3>Ejemplo de imagen desde el equipo:</h3>
+
+    <img src="imagen1.webp" alt="No disponible">
+</section>
+
+<section>
+    <h2 id="sexto">Tablas en HTML</h2>
+
+    <p>Para crear una tabla en nuestra página web deberemos emplear &lt;table&gt;"contenido de la tabla"&lt;/table&gt;</p>
+
+    <p>Para cada fila de nuestra tabla deberemos utilizar &lt;tr&gt;"contenido de la fila"&lt;/tr&gt;</p>
+
+    <p>Y para cada columna de la fila deberemos utilizar &lt;td&gt;"contenido de la columna"&lt;/td&gt;</p>
+
+    <p>Pero si queremos que el texto sea un encabezado utilzaremos &lt;th&gt;"contenido de la columna"&lt;/th&gt;</p>
+    
+    <h3>Ejemplo de una tabla:</h3>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Lunes</th>
+            <th>Martes</th>
+        </tr>
+        <tr>
+            <td>08:00-08:55</td>
+            <td>Aplicaciones Web</td>
+            <td>Itinerario Personal</td>a tu página con estas etiquetas:
 
 
+        </tr>
+        <tr>
+            <td>08:55-09:50</td>
+            <td>Sistemas Operativos</td>
+            <td>Servicios en Red</td>
+        </tr>
+    </table>
+</section>
+
+<form>
+    <label for="nombre"> Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" value=""><br>
+    <label for="email">Correo Electrónico:</label><br>
+    <input type="email" id="email" name="email" value=""><br><br>
+    <input type="submit" value="Submit"><br>
+</form>
+
+<footer>
+    <p>Autor: Xukai Zhang</p>
+    <p>Fecha: 18 de Septiembre de 202</p>
+</footer>
 </body>
 </html>
+
