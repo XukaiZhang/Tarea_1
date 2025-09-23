@@ -48,17 +48,19 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #1e90ff;
+    color: #1e90ff; /* azul original */
     margin: 0 15px;
     font-weight: 500;
     font-size: 1rem;
-    transition: color 0.3s, transform 0.3s;
+    display: inline-block; /* para que funcione transform */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
     color: #63b3ff;
-    transform: translateY(-2px);
+    transform: scale(1.07);
 }
+
 
 section {
     background-color: #1e1e1e;
@@ -167,6 +169,36 @@ video {
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
+video.zoom-hover {
+    display: block;
+    margin: 40px auto;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(58, 74, 94, 0.4);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+  
+  video.zoom-hover:hover {
+    transform: scale(1.07);
+    box-shadow: 0 25px 55px rgba(89, 107, 127, 0.8);
+  }
+
+img.zoom-hover {
+    display: block;
+    max-width: 100%;
+    border-radius: 18px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+      0 10px 30px rgba(58, 74, 94, 0.5);
+    cursor: pointer;
+  }
+  
+  img.zoom-hover:hover {
+    transform: scale(1.07);
+    box-shadow:
+      0 15px 45px rgba(89, 107, 127, 0.8);
+  }
+
 footer {
     text-align: center;
     padding: 20px 0;
@@ -198,9 +230,12 @@ sub, sup {
 a {
     color: #1e90ff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* para que funcione transform */
+
 }
 
 a:hover {
     color: #63b3ff;
+    transform: scale(1.07);
 }
