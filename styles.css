@@ -48,11 +48,11 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #1e90ff; /* azul original */
+    color: #1e90ff;
     margin: 0 15px;
     font-weight: 500;
     font-size: 1rem;
-    display: inline-block; /* para que funcione transform */
+    display: inline-block;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -231,7 +231,7 @@ a {
     color: #1e90ff;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
-    display: inline-block; /* para que funcione transform */
+    display: inline-block;
 
 }
 
